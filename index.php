@@ -11,6 +11,6 @@ require 'lib/class.AutoLoader.php';
 
 $app = new \Slim\Slim();
 
-require 'Routes/user.route.php';
+require 'Controllers/user.controller.php';
 
 $app->run();
