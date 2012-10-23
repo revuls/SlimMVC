@@ -1,9 +1,9 @@
 <?php
 
-require 'lib/Slim/Slim.php';
-require 'lib/class.Config.php';
-require 'lib/class.Core.php';
-require 'lib/class.AutoLoader.php';
+require '_lib/Slim/Slim.php';
+require '_lib/class.Config.php';
+require '_lib/class.Core.php';
+require '_lib/class.AutoLoader.php';
 
 //require 'Models/class.User.php';
 
