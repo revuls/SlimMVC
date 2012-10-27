@@ -21,7 +21,7 @@ class User {
 	}
 
 	// Get user by the Id
-	public function getUserById($id)) {
+	public function getUserById($id) {
 		$r = array();		
 		
 		$core = Core::getInstance();
@@ -39,17 +39,17 @@ class User {
 	}
 
 	// Insert a new user
-	public function insertUser($data)) {
+	public function insertUser($data) {
 		
 	}
 
 	// Update the data of an user
-	public function updateUser($data)) {
+	public function updateUser($data) {
 		
 	}
 
 	// Delete user
-	public function deleteUser($id)) {
+	public function deleteUser($id) {
 		
 	}
 
