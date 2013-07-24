@@ -1,1 +1,0 @@
-here must be stored the images
