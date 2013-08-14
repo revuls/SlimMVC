@@ -15,7 +15,10 @@ $app = new \Slim\Slim(array(
     'templates.path' => '../templates/',
 ));
 
-require '../routers/index.router.php';
-require '../routers/user.router.php';
+// Automatically load router files
+$routers = glob('../Routers/*.router.php');
+foreach ($routers as $router) {
+    require $router;
+}
 
 $app->run();
