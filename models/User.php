@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * This is an example of User Class using PDO
+ *
+ */
+
+
 class User {
 
 	private $core;
