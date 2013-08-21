@@ -27,8 +27,8 @@ Here we have the core classes of the connection with the DB
 ### models
 
 Add the model classes here.
+We are using PDO for the Database.
 
-We are using PDO for the Database
 Example of class:
 
 Stuff.php
@@ -42,7 +42,7 @@ Stuff.php
 		}
 		
 		// Get all stuff
-		public function getSuff() {
+		public function getAllStuff() {
 			$r = array();		
 
 			$sql = "SELECT * FROM stuff";
@@ -74,12 +74,12 @@ stuff.router.php
 
 	// Get stuff
 	$app->get('/stuff', function () use ($app) {			
-		//Code here
+		echo 'This is a GET route';
 	});
 
 	//Create user
 	$app->post('/stuff', function () use ($app) {	
-		//Code here
+		echo 'This is a POST route';
 	});	
 
 	// PUT route
