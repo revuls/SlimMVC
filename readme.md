@@ -20,11 +20,11 @@ Folder System
 	* name.router.php (routes by functionalities)
 * templates/
 
-### lib
+### lib/
 
 Here we have the core classes of the connection with the DB
 
-### models
+### models/
 
 Add the model classes here.
 We are using PDO for the Database.
@@ -33,6 +33,7 @@ Example of class:
 
 Stuff.php
 
+```php
 	class Stuff {
 
 		private $core;
@@ -56,14 +57,15 @@ Stuff.php
 			return $r;
 		}
 	}
+```
 
-### public
+### public/
 
 All the public files:
 * Images, CSS and JS files
 * index.php
 
-### routers
+### routers/
 
 All the files with the routes. Each file contents the routes of an specific functionality.
 It is very important that the names of the files inside this folder follow this pattern: name.router.php
@@ -72,6 +74,7 @@ Example of router file:
 
 stuff.router.php
 
+```php
 	// Get stuff
 	$app->get('/stuff', function () use ($app) {			
 		echo 'This is a GET route';
@@ -91,8 +94,9 @@ stuff.router.php
 	$app->delete('/stuff', function () {
 	    echo 'This is a DELETE route';
 	});
+```
 
-### templates
+### templates/
 
 All the Twig templates.
 

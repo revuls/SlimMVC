@@ -8,7 +8,7 @@
 
 class User {
 
-	private $core;
+	protected $core;
 
 	function __construct() {
 		$this->core = Core::getInstance();
