@@ -1,11 +1,14 @@
 <?php
 
+namespace models;
+use lib\Core;
+
 class Stuff {
 
 	protected $core;
 
 	function __construct() {
-		$this->core = Core::getInstance();			
+		//$this->core = \lib\Core::getInstance();
 	}
 	
 	// Get all stuff
@@ -22,4 +25,8 @@ class Stuff {
 		}		
 		return $r;
 	}
+
+    public function setStuff() {
+        return "hello world!!!";
+    }
 }

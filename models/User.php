@@ -5,6 +5,8 @@
  *
  */
 
+namespace models;
+use lib\Core;
 
 class User {
 
