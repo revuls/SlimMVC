@@ -2,7 +2,7 @@
 
 // GET index route
 $app->get('/', function () use ($app) {
-    $hello = "hello world!";
-    //echo $hello;
+    $oStuff = new models\Stuff();
+    $hello = $oStuff->setStuff();
     $app->render('index.html', array('hello' => $hello));
 });

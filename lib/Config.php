@@ -1,5 +1,7 @@
 <?php
 
+namespace lib;
+
 // Configuration Class
 class Config {
     static $confArray;

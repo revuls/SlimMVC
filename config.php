@@ -1,5 +1,7 @@
 <?php
 
+use lib\Config;
+
 // DB Config
 Config::write('db.host', 'localhost');
 Config::write('db.port', '');

@@ -1,5 +1,10 @@
 <?php
 
+namespace lib;
+
+use lib\Config;
+use PDO;
+
 class Core {
     public $dbh; // handle of the db connexion
     private static $instance;
