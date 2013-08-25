@@ -1,10 +1,7 @@
 <?php
 
-require '../lib/Config.php';
-require '../config.php';
-require '../lib/Core.php';
-
 require '../vendor/autoload.php';
+require '../config.php';
 
 // Setup custom Twig view
 $twigView = new \Slim\Views\Twig();

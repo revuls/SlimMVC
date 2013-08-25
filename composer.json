@@ -18,8 +18,7 @@
     },
     "autoload":{
         "psr-0":{
-            "Lib": "/lib/",
-            "Model": "/models/"
+            "": ""
         }
     }
 }
