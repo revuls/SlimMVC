@@ -7,6 +7,7 @@
 
 namespace models;
 use lib\Core;
+use PDO;
 
 class User {
 
