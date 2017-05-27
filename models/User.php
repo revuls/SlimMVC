@@ -27,7 +27,7 @@ class User {
 		//$stmt->bindParam(':id', $this->id, PDO::PARAM_INT);
 
 		if ($stmt->execute()) {
-			$r = $stmt->fetchAll(PDO::FETCH_ASSOC);		   	
+			$r = $stmt->fetchAll(\PDO::FETCH_ASSOC);		   	
 		} else {
 			$r = 0;
 		}		
@@ -43,7 +43,7 @@ class User {
 		//$stmt->bindParam(':id', $this->id, PDO::PARAM_INT);
 
 		if ($stmt->execute()) {
-			$r = $stmt->fetchAll(PDO::FETCH_ASSOC);		   	
+			$r = $stmt->fetchAll(\PDO::FETCH_ASSOC);		   	
 		} else {
 			$r = 0;
 		}		
@@ -56,11 +56,11 @@ class User {
 		
 		$sql = "SELECT * FROM user WHERE email=:email AND password=:pass";		
 		$stmt = $this->core->dbh->prepare($sql);
-		$stmt->bindParam(':email', $email, PDO::PARAM_STR);
-		$stmt->bindParam(':pass', $pass, PDO::PARAM_STR);
+		$stmt->bindParam(':email', $email, \PDO::PARAM_STR);
+		$stmt->bindParam(':pass', $pass, \PDO::PARAM_STR);
 
 		if ($stmt->execute()) {
-			$r = $stmt->fetchAll(PDO::FETCH_ASSOC);		   	
+			$r = $stmt->fetchAll(\PDO::FETCH_ASSOC);		   	
 		} else {
 			$r = 0;
 		}		
